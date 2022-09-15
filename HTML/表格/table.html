@@ -1,0 +1,33 @@
+<!-- 
+td是单元格
+th是表头单元格
+tr是行,tr的内部放置td或th单元格。
+caption放置在表格的上面或下面，表示对表格的描述或者表格名字
+-->
+<style>
+    table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+</style>
+<table>
+    <caption>测试表格</caption>
+    <thead>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The table body</td>
+            <td>with two columns</td>
+        </tr>
+    </tbody>
+</table>
