@@ -1,0 +1,21 @@
+background-color属性有以下类型的值
+关键字：
+background-color: red;
+
+16进制值表示颜色：
+background-color: #bbff00;
+
+RGB表示颜色：
+background-color: rgb(255, 255, 128);
+
+色相：
+background-color: hsla(50, 33%, 25%, 0.75);
+
+特殊关键字值：
+background-color: currentColor;
+background-color: transparent;
+
+全局值：
+background-color: inherit;
+background-color: initial;
+background-color: unset;

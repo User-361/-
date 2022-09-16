@@ -1,0 +1,24 @@
+min-width给元素设置最小宽度值
+max-width给元素设置最大宽度值
+优先级顺序：
+min-width > max-width > width
+
+width属性的值有：
+长度值：
+width: 300px;
+width: 25em;
+
+百分比值：
+width: 75%;
+
+关键字值：
+width: max-content; 固有首选宽度
+width: min-content; 固有最小宽度
+width: fill-available; 包含块的宽度减去margin、border、padding
+width: fit-content(20em);等同于min(max-content, max(min-content, fill-available)
+width: auto; 用于弹性元素默认最小宽度
+
+全局值：
+width: inherit;
+width: initial;
+width: unset;

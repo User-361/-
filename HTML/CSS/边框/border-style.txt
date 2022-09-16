@@ -1,0 +1,31 @@
+2. border-style的语法有以下几类：
+默认四行样式：
+border-style: dashed;（虚线）
+
+设定水平 垂直
+border-style: dotted solid; 水平点，垂直线
+
+顶部 垂直 底部
+border-style: hidden double dashed;
+
+上 右 下 左
+border-style: none solid dotted dashed;
+
+全局值
+border-style: inherit;
+border-style: initial;
+border-style: unset;
+
+3. border-style可以有如下取值：
+1. none、hidden：
+不显示边框，若未设置背景图片，border-width计算后的值为0，即使先前指定过
+它的值，在单元格边框重叠的情况下，none的优先级最低，若为none且与其他边框重叠，显示重叠的边框
+hidden优先级最高，不显示重叠边框
+2. dotted 显示为一系列圆点 半径时border-width的一半
+3. dashed 显示为一系列短的方形虚线 标准中没有定义线段的长度和大小，视不同实现而定。
+4. solid显示为一条实线
+5. double显示为一条双实线，宽度是 border-width 。
+6. groove显示为有雕刻效果的边框
+7. ridge显示为有浮雕效果的边框
+8. inset显示有陷入效果的边框
+9. outset显示为有突出效果的边框

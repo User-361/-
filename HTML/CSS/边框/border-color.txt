@@ -1,0 +1,15 @@
+语法：
+只有一个值：四边框颜色
+border-color: red;
+
+有两个值：垂直 水平
+border-color: red #f015ca;
+
+有三个值：顶 垂直 底
+border-color: red yellow green;
+
+有四个值：由顶开始顺时针
+border-color: red yellow green blue;
+
+全局：继承
+border-color:inherit

@@ -1,0 +1,23 @@
+ font-size的值有
+绝对大小值
+    font-size: xx-small;
+    font-size: x-small;
+    font-size: small;
+    font-size: medium;（默认）
+    font-size: large;
+    font-size: x-large;
+    font-size: xx-large;
+    
+相对大小值（比父元素的字体大或小）
+    font-size: larger;
+    font-size: smaller;
+
+长度值(单位是em或ex时，大小为相对于父元素的文字的大小，如0.5em就是父元素字体大小的一半)
+    font-size: 12px;
+    font-size: 0.8em; 
+    em可以自动适应用户的字体
+
+百分比值
+    font-size: 80%;
+    
+    font-size: inherit;

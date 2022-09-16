@@ -1,0 +1,15 @@
+1. border-width的属性值有以下几类：
+/* 用法一：明确指定宽度值 */
+border-width: 5px;
+border-width: 2px 1.5em;
+border-width: 1px 2em 1.5cm;
+border-width: 1px 2em 0 4rem;
+
+/* 用法二：使用全局关键字 */
+/* 可以使用的全局关键字有：inherit(继承),initial（初始值）,unset（不设置） */
+border-width: inherit;
+
+/* 用法三：使用作用于 border-width 的关键字 */
+border-width: thin;
+border-width: medium;
+border-width: thick;

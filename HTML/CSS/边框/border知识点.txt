@@ -1,0 +1,24 @@
+border-width,border-style,border-color属性可以接受4个参数，分别是边框的上右下左（顺时针）
+当只有一个宽度，默认选中所有边框
+当有两个宽度默认选中元素的横边与纵边
+当有三个宽度默认选中上横边，纵边，下横边
+
+border属性最多接受三个参数，分别为宽度、风格、颜色，所以会使得四条边边框相同
+
+border的语法有如下几种：（值的顺序无关紧要）
+/* style */
+border: solid;
+
+/* width | style */
+border: 2px dotted;
+
+/* style | color */
+border: outset #f33;
+
+/* width | style | color */
+border: medium dashed green;
+
+/* Global values */
+border: inherit;
+border: initial;
+border: unset;
