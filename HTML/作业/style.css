@@ -1,0 +1,14 @@
+table{
+    border: 1px solid lightgray;
+    border-collapse: collapse;  /* 取消单元格之间的空白 */
+}
+aside{
+    margin:40px;
+}
+aside>p{
+    margin-left:40px;
+    float:right;
+}
+body{
+    margin:50px;
+}
