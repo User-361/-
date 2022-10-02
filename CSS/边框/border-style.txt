@@ -21,11 +21,11 @@ border-style: unset;
 不显示边框，若未设置背景图片，border-width计算后的值为0，即使先前指定过
 它的值，在单元格边框重叠的情况下，none的优先级最低，若为none且与其他边框重叠，显示重叠的边框
 hidden优先级最高，不显示重叠边框
-2. dotted 显示为一系列圆点 半径时border-width的一半
-3. dashed 显示为一系列短的方形虚线 标准中没有定义线段的长度和大小，视不同实现而定。
-4. solid显示为一条实线
-5. double显示为一条双实线，宽度是 border-width 。
-6. groove显示为有雕刻效果的边框
-7. ridge显示为有浮雕效果的边框
-8. inset显示有陷入效果的边框
-9. outset显示为有突出效果的边框
+2. dotted   显示为一系列圆点 半径时border-width的一半
+3. dashed   显示为一系列短的方形虚线 标准中没有定义线段的长度和大小，视不同实现而定。
+4. solid    显示为一条实线
+5. double   显示为一条双实线，宽度是 border-width 。
+6. groove   显示为有雕刻效果的边框
+7. ridge    显示为有浮雕效果的边框
+8. inset    显示有陷入效果的边框
+9. outset   显示为有突出效果的边框

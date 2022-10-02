@@ -1,0 +1,48 @@
+value属性规定输入字段的初始值
+
+readonly属性规定输入字段为只读（不能修改），一般和value设定初始值一起用
+
+disabled 属性规定输入字段是禁用的。被禁用的元素是不可用和不可点击的。被禁用的元素不会被提交
+
+size 属性规定输入字段的尺寸（以字符计）
+
+HTML5 为 <input> 增加了如下属性：
+
+autocomplete    基于之前的输入提示输入
+autofocus       如果设置，进入页面自动获得焦点
+form            form 属性规定 <input> 元素所属的一个或多个表单。    提示：如需引用一个以上的表单，请使用空格分隔的表单 id 列表。
+实际应用：为表单设置id，在表单之外的input如果想要和表单一起提交，在表单之外的input元素中添加form属性
+
+formaction：属性规定当提交表单时处理该输入控件的文件的 URL。
+formaction 属性覆盖 <form> 元素的 action 属性。
+formaction 属性适用于 type="submit" 以及 type="image"
+
+formenctypeformenctype 属性规定当把表单数据（form-data）提交至服务器时如何对其进行编码（仅针对 method="post" 的表单）。
+formenctype 属性覆盖 <form> 元素的 enctype 属性。
+formenctype 属性适用于 type="submit" 以及 type="image"。
+
+formmethod
+
+formnovalidate 是否验证
+
+formtarget
+
+height 和 width
+
+list    list 属性引用的 <datalist> 元素中包含了 <input> 元素的预定义选项。
+和datalist一起用
+
+min 和 max
+
+multiple 允许用户在input中提交一个以上的值
+
+pattern (regexp)
+pattern 属性规定用于检查 <input> 元素值的正则表达式。
+pattern 属性适用于以下输入类型：text、search、url、tel、email、and password。
+
+placeholder 属性规定用以描述输入字段预期值的提示（样本值或有关格式的简短描述）。
+该提示会在用户输入值之前显示在输入字段中。
+placeholder 属性适用于以下输入类型：text、search、url、tel、email 以及 password。
+
+required    必填字段
+step        规定合法数字间隔

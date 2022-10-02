@@ -1,0 +1,19 @@
+input元素有多种类型
+text(文本框)、radio(单选按钮)、sumbit(提交按钮)、checkbox(复选框)
+
+HTML5 增加了多个新的输入类型：
+
+color           输入颜色（有的浏览器会显示颜色选择器）
+date            包含日期的输入字段
+datetime        允许用户选择日期和时间（有时区）
+datetime-local  允许用户选择日期和时间（无时区）。
+email           输入电子邮件地址并进行验证
+month           允许选择年月
+number          输入包含数字的输入字段（可添加限制）
+range           包含一定范围内的值的输入字段（有些浏览器会显示为滑块组件）
+search           搜索框
+tel              电话号码
+time             允许用户选择时间
+url              包含URL地址的输入字段
+week            允许选择周和年
+

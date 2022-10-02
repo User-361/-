@@ -1,0 +1,9 @@
+text-decoration属性有五个值
+none
+underline       下划线
+overline        在顶端画一条线
+line-through    在文本间画一个贯穿线（html中的s和strike）
+blink           文本闪烁
+
+可以设置多个文本装饰，用逗号隔开
+text-decoration: underline;

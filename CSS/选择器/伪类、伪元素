@@ -1,0 +1,91 @@
+伪类是选择器的一种，用于选择处于特定状态的元素
+伪类就是开头为冒号的关键字
+:first-child    选中文章第一个子元素
+:last-child     父元素的最后一个子元素
+:only-child     匹配没有任何兄弟元素的元素
+:invalid        表示任意内容未通过验证的input或者form元素（显示用户的字段错误）
+:hover          用户将指针挪到元素上才会激活
+:focus          只会在用户使用键盘控制,选定元素的时候激活
+
+
+伪元素
+伪元素开头为双冒号::
+::first-line    选中第一行
+::before        常和content属性一起使用,在文本的前面添加内容
+::after         常和content属性一起使用,在文本的后面添加内容
+
+举例子：
+.box::before {
+    content: "This should show before the other content."
+}   
+
+参考网址：
+https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements#%E6%8A%8A%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E7%BB%84%E5%90%88%E8%B5%B7%E6%9D%A5
+:active	            在用户激活（例如点击）元素的时候匹配。
+:any-link	        匹配一个链接的:link和:visited状态。
+:blank	            匹配空输入值的<input>元素。
+:checked	        匹配处于选中状态的单选或者复选框。
+:current (en-US)	匹配正在展示的元素，或者其上级元素。
+:default	        匹配一组相似的元素中默认的一个或者更多的 UI 元素。（如单选按钮的默认值）
+:dir	            匹配特定文字书写方向的元素  基于其方向性（HTMLdir属性或者 CSSdirection属性的值）匹配一个元素。
+:disabled	        匹配（任何被禁用的元素）处于关闭状态的用户界面元素
+:empty	            匹配除了可能存在的空格外，没有子元素的元素。
+:enabled	        匹配处于开启状态的用户界面元素。
+:first	            匹配分页媒体的第一页。
+:first-child	    匹配兄弟元素中的第一个元素。
+:first-of-type	    匹配兄弟元素中第一个某种类型的元素。
+:focus	            当一个元素有焦点的时候匹配。
+:focus-visible	    当元素有焦点，且焦点对用户可见的时候匹配。
+:focus-within	    匹配有焦点的元素，以及子代元素有焦点的元素。
+:future (en-US)	    匹配当前元素之后的元素。
+:hover	            当用户悬浮到一个元素之上的时候匹配。
+:indeterminate	    匹配未定态值的 UI 元素，通常为复选框。
+:in-range	        用一个区间匹配元素，当值处于区间之内时匹配。
+:invalid	        匹配诸如<input>的位于不可用状态的元素。
+:lang	            基于语言（HTMLlang属性的值）匹配元素。
+:last-child	        匹配兄弟元素中最末的那个元素。
+:last-of-type	    匹配兄弟元素中最后一个某种类型的元素。
+:left	            在分页媒体 (en-US)中，匹配左手边的页。
+:link	            匹配未曾访问的链接。
+:local-link (en-US)	匹配指向和当前文档同一网站页面的链接。
+:is()	           （伪元素无效）函数将选择器列表作为参数，并选择该列表中任意一个选择器可以选择的元素。
+:not	            匹配不符合一组选择器的元素。由于它的作用是防止特定的元素被选中，它也被称为反选伪类
+:nth-child	        首先找到所有当前元素的兄弟元素，然后按照位置先后顺序从 1 开始排序，选择的结果为 CSS 伪类:nth-child 括号中表达式（an+b）匹配到的元素集合（n=0，1，2，3...）。
+使用：
+
+tr:nth-child(2n+1)
+表示 HTML 表格中的奇数行。
+
+tr:nth-child(odd)
+表示 HTML 表格中的奇数行。
+
+:nth-of-type	    匹配某种类型的一列兄弟元素（比如，<p>元素）——兄弟元素按照an+b形式的式子进行匹配（比如 2n+1 匹配元素 1、3、5、7 等。即所有的奇数个）。
+:nth-last-child	    匹配一列兄弟元素，从后往前倒数。兄弟元素按照an+b形式的式子进行匹配（比如 2n+1 匹配按照顺序来的最后一个元素，然后往前两个，再往前两个，诸如此类。从后往前数的所有奇数个）。
+:nth-last-of-type	匹配某种类型的一列兄弟元素（比如，<p>元素），从后往前倒数。兄弟元素按照an+b形式的式子进行匹配（比如 2n+1 匹配按照顺序来的最后一个元素，然后往前两个，再往前两个，诸如此类。从后往前数的所有奇数个）。
+:only-child	        匹配没有兄弟元素的元素。
+:only-of-type	    匹配兄弟元素中某类型仅有的元素。
+:optional	        匹配不是必填的 form 元素。
+:out-of-range	    按区间匹配元素，当值不在区间内的的时候匹配。
+:past (en-US)	    匹配当前元素之前的元素。
+:placeholder-shown	匹配显示占位文字的 input 元素。
+:playing (en-US)	匹配代表音频、视频或者相似的能“播放”或者“暂停”的资源的，且正在“播放”的元素。
+:paused (en-US)	    匹配代表音频、视频或者相似的能“播放”或者“暂停”的资源的，且正在“暂停”的元素。
+:read-only	        匹配用户不可更改的元素。
+:read-write	        匹配用户可更改的元素。
+:required	        匹配必填的 form 元素。
+:right	            在分页媒体 (en-US)中，匹配右手边的页。
+:root	            匹配文档的根元素。
+:scope	            匹配任何为参考点元素的的元素。
+:valid	            匹配诸如<input>元素的处于可用状态的元素。
+:target	            匹配当前 URL 目标的元素（例如如果它有一个匹配当前URL 分段的元素）。
+:visited	        匹配已访问链接。
+伪元素
+选择器	描述
+::after	            匹配出现在原有元素的实际内容之后的一个可样式化元素。
+::before	        匹配出现在原有元素的实际内容之前的一个可样式化元素。
+::first-letter	    匹配元素的第一个字母。
+::first-line	    匹配包含此伪元素的元素的第一行。
+::grammar-error	    匹配文档中包含了浏览器标记的语法错误的那部分。
+::selection	        匹配文档中被选择的那部分。(比如使用鼠标或其他选择设备选中的部分)
+::spelling-error	匹配文档中包含了浏览器标记的拼写错误的那部分。
+

@@ -1,0 +1,8 @@
+autocomplete 属性规定表单是否应打开自动完成功能。
+
+启用自动完成功能后，浏览器会根据用户之前输入的值自动填写值。
+
+实例
+启用自动填写的表单：
+
+<form action="/action_page.php" autocomplete="on">

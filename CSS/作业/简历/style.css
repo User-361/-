@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+}
+
+span{
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+a{
+    text-decoration: none;
+    color:lightgray;
+}
+a:hover{
+    color:black;
+}
+#head_top{
+    background-color: #eee;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+}
+.mess_white{
+    height: 250px;
+    background-color: #fff;
+}
+.exp_gray{
+    height: 250px;
+    background-color: #eee;
+}
+.edu_white{
+    height: 250px;
+    background-color: #fff;
+}
+.lau_gray{
+    height: 250px;
+    background-color: #eee;
+}
+.pri_white{
+    height: 250px;
+    background-color: #fff;
+}
+

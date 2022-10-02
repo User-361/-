@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Forms Review</title>
+</head>
+
+<body>
+    <section id="overlay">
+
+        <p id="logo">Order your milktea!</p>
+        <hr>
+        <!--在这里进行您的代码编写-->
+        <form action="submission.html" method="post">
+            <label for="taste">
+                你想要什么口味的奶茶？
+                <input type="text" id="taste" name="taste" required maxlength="10" minlength="2">
+                <br>
+            </label>
+            <label for="number">
+                您想要几杯？
+                <input type="text" id="number" name="number" required max="4" min="1">
+                <br>
+            </label>
+            <label for="sugar">
+                您需要的糖分量
+                <br>
+                无糖
+                <input type="range" max="10" min="0">
+                全糖
+            </label>
+            <label for="top">
+                <br>
+                您想要什么顶料？
+                <br>
+                <input type="checkbox" name="top">冰淇淋
+                <input type="checkbox" name="top">奶盖
+                <input type="checkbox" name="top">可可粉
+            </label>
+            <br>
+            <label for="ice">
+                您需要加冰吗
+                <br>
+                <input type="radio" name="ice" id="ice">Yes
+                <input type="radio" name="ice" id="ice">No
+            </label>
+            <br>
+            <label for="xiaoliao">
+                您需要加什么料？
+                <select name="xiaoliao">
+                    <option value="珍珠" selected>珍珠</option>
+                    <option value="波霸">波霸</option>
+                    <option value="布丁">布丁</option>
+                </select>
+                <br>
+            </label>
+            <label for="size">
+                您要什么规格？
+                <input list="size" >
+                <datalist id="size">
+                    <option value="小杯">小杯</option>
+                    <option value="中杯">中杯</option>
+                    <option value="大杯">大杯</option>
+                </datalist>
+                <br>
+            </label>
+            <label for="request">
+                您还有别的什么要求吗？
+                <br>
+                <textarea name="request" id="request" cols="30" rows="2"></textarea>
+                <br>
+            </label>
+            <label for="tel_num">
+                您的联系方式
+                <input type="tel" name="tel_num" id="tel_num" pattern="1.........[0-9]">
+            </label>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+
+</html>

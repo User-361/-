@@ -1,0 +1,5 @@
+select元素用来定义下拉列表
+用select元素包裹option元素
+option即为下拉列表的选项
+
+还可以通过添加selected属性来定义

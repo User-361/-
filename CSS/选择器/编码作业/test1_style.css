@@ -1,0 +1,35 @@
+/* 第一层列表添加外边框 */
+ul{
+    border:1px solid black;
+}
+
+/* 第二层设置背景颜色#eee */
+ol{
+    background-color: #eee;
+}
+
+/* 第三层列表添加虚线边框 */
+ol>li>ol{
+    border:1px dotted
+}
+/* 每一个列表的第一个列表项目设置字体为粗体 */
+/* 添加下边框 背景颜色黑色 字体颜色白色*/
+.row1{
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    background-color: black;
+    color: white;
+    
+}
+.second:last-child{
+    font-style: oblique;
+    color:white;
+    background-color: black;
+}
+/* ul::first-line,ol::first-line{
+    font-weight: bold;
+    border-bottom: 5px solid red;
+    border-color: aqua;
+    background-color: gray;
+    color: #eee;
+} */

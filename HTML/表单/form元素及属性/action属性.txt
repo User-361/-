@@ -1,0 +1,16 @@
+action 属性定义提交表单时要执行的操作。
+
+通常，当用户单击“提交”按钮时，表单数据将发送到服务器上的文件中。
+
+在下面的例子中，表单数据被发送到名为 "action_page.php" 的文件。该文件包含处理表单数据的服务器端脚本：
+
+实例
+提交后，将表单数据发送到 "action_page.php"：
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Bill"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Gates"><br><br>
+  <input type="submit" value="Submit">
+</form>

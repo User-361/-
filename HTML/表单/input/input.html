@@ -1,0 +1,51 @@
+<!-- 
+对input的type属性进行测试
+1.对文本框进行测试
+2.对密码框进行测试
+3.对单选框进行测试
+4.对提交按钮进行测试（radio）
+radio通过name指定对一个选择的选项 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">
+            用户名：
+            <input type="text" name="username">
+        </label>
+        <br>
+        <label for="">
+            密码：
+            <input type="password" name="password">
+        </label>
+        <br>
+        是否同意该协议
+        <br>
+        <input type="radio" name="xieyi" value="agree" checked>是
+        <br>
+        <input type="radio" name="xieyi" value="disagree">否
+        <br>
+        <input type="submit" value="登录">
+    </form>
+    <form>
+        <fieldset>
+            <legend>第二个表</legend>
+
+            <input type="checkbox" name="vehicle" value="Bike">I have a bike
+            <br>
+            <input type="checkbox" name="vehicle" value="Car">I have a car
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

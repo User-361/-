@@ -1,0 +1,8 @@
+novalidate 属性是一个布尔属性。
+
+如果已设置，它规定提交时不应验证表单数据。
+
+实例
+未设置 novalidate 属性的表单：
+
+<form action="/action_page.php" novalidate>

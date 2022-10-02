@@ -1,0 +1,6 @@
+text-transform属性处理文本的大小写，该属性有四个值
+none            对文本不做任何修改
+uppercase       全大写
+lowercase       全小写
+capitalize      将每个单词首字母大写
+
